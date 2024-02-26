@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SIGC.Properties
+namespace SIGC_WPF_DOTNETFRAMEWORK.Properties
 {
 
 

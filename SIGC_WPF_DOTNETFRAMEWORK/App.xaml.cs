@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace SIGC
+namespace SIGC_WPF_DOTNETFRAMEWORK
 {
     /// <summary>
     /// Interaction logic for App.xaml
