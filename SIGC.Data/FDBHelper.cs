@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
 
 namespace SIGC.Data
 {
@@ -27,7 +25,7 @@ namespace SIGC.Data
             ds = new DataSet();
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 600;
+            cmd.CommandTimeout = 60;
 
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
