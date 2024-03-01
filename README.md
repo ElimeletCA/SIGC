@@ -1,5 +1,6 @@
-#Sistema Integral de Gestión Clinica
-##Módulos trabajados (leer, agregar, actualizar, eliminar)
+<h1>Sistema Integral de Gestión Clinica</h1>
+
+<h3>Módulos trabajados (leer, agregar, actualizar, eliminar)</h3>
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
