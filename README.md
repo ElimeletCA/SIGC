@@ -1,6 +1,55 @@
 <h1>Sistema Integral de Gestión Clinica</h1>
 
-<h3>Módulos trabajados (leer, agregar, actualizar, eliminar)</h3>
+<h3>Implementación de store procedures y métodos en la capa de Data</h3>
+
+| Tabla                   | Estado ⌛ ⛔ ✅ |
+|-------------------------|-----------|
+| Cliente                 |  ⌛    |
+| Caja                    |         |
+| Cajero                  |         |
+| Categoria               |         |
+| Cita                    |         |
+| Cliente                 |         |
+| Consulta                |         |
+| Consultorio             |         |
+| Departamento            |         |
+| Detalle Factura         |         |
+| Detalle_Orden_Compra    |         |
+| Detalle Receta          |         |
+| Disponibilidad_Medico   |         |
+| Empleado                |         |
+| Empresa                 |         |
+| Especialidad_Medica     |         |
+| Estado_Caja             |         |
+| Estado_Factura          |         |
+| Factura                 |         |
+| Forma_Pago              |         |
+| Historial_Clinico       |         |
+| Medicamento             |         |
+| Medico                  |         |
+| Modulo                  |         |
+| Modulo_Permiso          |         |
+| Nomina                  |         |
+| Orden_Compra            |         |
+| Paciente                |         |
+| Permiso                 |         |
+| Permiso_RoI             |         |
+| Producto                |         |
+| Producto_Proveedor      |         |
+| Proveedor               |         |
+| Puesto                  |         |
+| Rango_Comprobante       |         |
+| Receta                  |         |
+| Rol                     |         |
+| Secuencia_ActuaI_Comprobante |    |
+| Seguro                  |         |
+| Tipo_Comprobante        |         |
+| Tipo_Documento          |    ⌛     |
+| Tipo_Factura            |         |
+| Tipo_Orden_Compra       |         |
+| Usuario                 |         |
+
+<h3>Implementación del mantenimiento de registros en la capa de la vista y el modelo</h3>
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
