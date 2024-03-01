@@ -3,6 +3,7 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 using SIGC.WPF.View.ViewModels.Pages.Cliente;
+using SIGC.WPF.View.Models.Cliente;
 using System.Data;
 namespace SIGC.WPF.View.ViewModels.Pages
 {
@@ -12,11 +13,12 @@ namespace SIGC.WPF.View.ViewModels.Pages
         private DataTable _clientes;
 
 
+
         [RelayCommand]
         private void OnCounterIncrement()
         {
-            Clientes = ListaClienteViewModel.GetClienteDataTable();
-
         }
+
+
     }
 }
