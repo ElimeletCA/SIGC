@@ -18,7 +18,6 @@ namespace SIGC.WPF.View.Views.Pages
             DataContext = this;
 
             InitializeComponent();
-
         }
     }
 }

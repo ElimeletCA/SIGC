@@ -8,8 +8,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SIGC.WPF.View.Services;
 using SIGC.WPF.View.ViewModels.Pages;
+using SIGC.WPF.View.ViewModels.Pages.Cliente;
 using SIGC.WPF.View.ViewModels.Windows;
 using SIGC.WPF.View.Views.Pages;
+using SIGC.WPF.View.Views.Pages.Cliente;
 using SIGC.WPF.View.Views.Windows;
 using System.IO;
 using System.Reflection;
@@ -53,6 +55,8 @@ namespace SIGC.WPF.View
 
                 services.AddSingleton<DashboardPage>();
                 services.AddSingleton<DashboardViewModel>();
+                services.AddSingleton<ListaClientePage>();
+                services.AddSingleton<ListaClienteViewModel>();
                 services.AddSingleton<DataPage>();
                 services.AddSingleton<DataViewModel>();
                 services.AddSingleton<SettingsPage>();

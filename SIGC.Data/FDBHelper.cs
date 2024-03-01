@@ -14,8 +14,16 @@ namespace SIGC.Data
         }
         private static string getConnectionString()
         {
-            string connectionString = "Data Source=elimeletca.database.windows.net;Initial Catalog=DBSIGC;User ID=admin1806;Password=T8Zic7$dBis7CFG";
-            return connectionString;
+            //string connectionString = "Data Source=elimeletca.database.windows.net;Initial Catalog=DBSIGC;User ID=admin1806;Password=T8Zic7$dBis7CFG;Connect Timeout=120;";
+            var builder = new SqlConnectionStringBuilder
+            {
+                DataSource = "elimeletca.database.windows.net",
+                InitialCatalog = "DBSIGC",
+                UserID = "admin1806",
+                Password = "T8Zic7$dBis7CFG",
+                ConnectTimeout = 120
+            };
+            return builder.ConnectionString;
         }
         public static DataSet ExecuteDataSet(string sqlSpName, SqlParameter[] dbParams)
         {
@@ -25,7 +33,7 @@ namespace SIGC.Data
             ds = new DataSet();
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
 
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -50,7 +58,7 @@ namespace SIGC.Data
         {
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (dbParams != null)
@@ -91,7 +99,7 @@ namespace SIGC.Data
 
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (dbParams != null)
@@ -118,7 +126,7 @@ namespace SIGC.Data
         {
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (dbParams != null)
@@ -152,7 +160,7 @@ namespace SIGC.Data
             object retVal = null;
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (dbParams != null)
@@ -214,7 +222,7 @@ namespace SIGC.Data
         {
             SqlConnection cn = new SqlConnection(getConnectionString());
             SqlCommand cmd = new SqlCommand(sqlSpName, cn);
-            cmd.CommandTimeout = 60;
+            cmd.CommandTimeout = 120;
             cmd.CommandType = CommandType.StoredProcedure;
 
             if (dbParams != null)
