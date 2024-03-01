@@ -44,7 +44,7 @@
 | Secuencia_ActuaI_Comprobante |    |
 | Seguro                  |         |
 | Tipo_Comprobante        |         |
-| Tipo_Documento          |         |
+| Tipo_Documento          |    ⌛     |
 | Tipo_Factura            |         |
 | Tipo_Orden_Compra       |         |
 | Usuario                 |         |
