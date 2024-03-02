@@ -95,6 +95,8 @@ namespace SIGC.WPF.View.ViewModels.Windows
                     new NavigationViewItem("Permisos", SymbolRegular.Key32, typeof(Views.Pages.DataPage)),
                     new NavigationViewItem("Configuración", SymbolRegular.Settings48, typeof(Views.Pages.DataPage)),
                     new NavigationViewItem("Módulos", SymbolRegular.ContentSettings32, typeof(Views.Pages.DataPage)),
+                    new NavigationViewItem("Extras", SymbolRegular.DockRow20, typeof(Views.Pages.DataPage)),
+
                     new NavigationViewItem("Usuarios", SymbolRegular.PeopleStar48, typeof(Views.Pages.DataPage))
 
                 }
