@@ -1,6 +1,6 @@
 <h1>Sistema Integral de Gestión Clinica</h1>
 
-<h3>Implementación de store procedures y métodos en la capa de Data</h3>
+<h3>Implementación de store procedures y clases con sus métodos en la capa de Data</h3>
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
