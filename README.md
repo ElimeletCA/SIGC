@@ -4,47 +4,47 @@
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
-| Cliente                 |  ⌛    |
+| Cliente                 |✅    |
 | Caja                    |         |
 | Cajero                  |         |
-| Categoria               |         |
+| Categoria               |✅         |
 | Cita                    |         |
 | Cliente                 |         |
 | Consulta                |         |
 | Consultorio             |         |
-| Departamento            |         |
+| Departamento            |✅         |
 | Detalle Factura         |         |
 | Detalle_Orden_Compra    |         |
 | Detalle Receta          |         |
 | Disponibilidad_Medico   |         |
 | Empleado                |         |
 | Empresa                 |         |
-| Especialidad_Medica     |         |
+| Especialidad_Medica     |✅         |
 | Estado_Caja             |         |
 | Estado_Factura          |         |
 | Factura                 |         |
 | Forma_Pago              |         |
 | Historial_Clinico       |         |
-| Medicamento             |         |
+| Medicamento             |✅         |
 | Medico                  |         |
-| Modulo                  |         |
+| Modulo                  |✅         |
 | Modulo_Permiso          |         |
 | Nomina                  |         |
 | Orden_Compra            |         |
 | Paciente                |         |
-| Permiso                 |         |
-| Permiso_RoI             |         |
+| Permiso                 |✅         |
+| Permiso_Rol             |         |
 | Producto                |         |
 | Producto_Proveedor      |         |
 | Proveedor               |         |
-| Puesto                  |         |
+| Puesto                  |✅         |
 | Rango_Comprobante       |         |
 | Receta                  |         |
-| Rol                     |         |
+| Rol                     |✅         |
 | Secuencia_ActuaI_Comprobante |    |
-| Seguro                  |         |
+| Seguro                  |✅         |
 | Tipo_Comprobante        |         |
-| Tipo_Documento          |    ⌛     |
+| Tipo_Documento          |✅     |
 | Tipo_Factura            |         |
 | Tipo_Orden_Compra       |         |
 | Usuario                 |         |
@@ -82,7 +82,7 @@
 | Orden_Compra            |         |
 | Paciente                |         |
 | Permiso                 |         |
-| Permiso_RoI             |         |
+| Permiso_Rol             |         |
 | Producto                |         |
 | Producto_Proveedor      |         |
 | Proveedor               |         |
