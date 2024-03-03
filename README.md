@@ -11,43 +11,43 @@
 | Cita                    |         |
 | Cliente                 |         |
 | Consulta                |         |
-| Consultorio             |         |
+| Consultorio             |✅         |
 | Departamento            |✅         |
 | Detalle Factura         |         |
 | Detalle_Orden_Compra    |         |
 | Detalle Receta          |         |
 | Disponibilidad_Medico   |         |
-| Empleado                |         |
-| Empresa                 |         |
+| Empleado                | ✅        |
+| Empresa                 | ✅        |
 | Especialidad_Medica     |✅         |
-| Estado_Caja             |         |
-| Estado_Factura          |         |
+| Estado_Caja             | ✅        |
+| Estado_Factura          |✅         |
 | Factura                 |         |
-| Forma_Pago              |         |
+| Forma_Pago              | ✅        |
 | Historial_Clinico       |         |
 | Medicamento             |✅         |
 | Medico                  |         |
 | Modulo                  |✅         |
 | Modulo_Permiso          |         |
-| Nomina                  |         |
+| Nomina                  | ✅        |
 | Orden_Compra            |         |
-| Paciente                |         |
+| Paciente                |✅         |
 | Permiso                 |✅         |
 | Permiso_Rol             |         |
-| Producto                |         |
+| Producto                |✅         |
 | Producto_Proveedor      |         |
-| Proveedor               |         |
-| Puesto                  |✅         |
+| Proveedor               | ✅        |
+| Puesto                  |✅       |
 | Rango_Comprobante       |         |
 | Receta                  |         |
 | Rol                     |✅         |
 | Secuencia_ActuaI_Comprobante |    |
 | Seguro                  |✅         |
-| Tipo_Comprobante        |         |
+| Tipo_Comprobante        | ✅        |
 | Tipo_Documento          |✅     |
-| Tipo_Factura            |         |
-| Tipo_Orden_Compra       |         |
-| Usuario                 |         |
+| Tipo_Factura            |✅         |
+| Tipo_Orden_Compra       |✅         |
+| Usuario                 |✅         |
 
 <h3>Implementación del mantenimiento de registros en la capa de la vista y el modelo</h3>
 
