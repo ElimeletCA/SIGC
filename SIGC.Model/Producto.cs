@@ -14,6 +14,8 @@ namespace SIGC.Model
         private decimal _precio_costo;
         private decimal _precio_venta;
         private int _cantidad_disponible;
+        private byte[] _imagen_producto;
+
 
         public int Id_producto
         {
@@ -50,8 +52,13 @@ namespace SIGC.Model
             get { return _cantidad_disponible; }
             set { _cantidad_disponible = value; }
         }
+        public byte[] Imagen_producto
+        {
+            get { return _imagen_producto; }
+            set { _imagen_producto = value; }
+        }
 
-        public Producto(int id_producto, int id_categoria, string nombre, decimal precio_costo, decimal precio_venta, int cantidad_disponible)
+        public Producto(int id_producto, int id_categoria, string nombre, decimal precio_costo, decimal precio_venta, int cantidad_disponible, byte[] imagen_producto)
         {
             _id_producto = id_producto;
             _id_categoria = id_categoria;
@@ -59,6 +66,7 @@ namespace SIGC.Model
             _precio_costo = precio_costo;
             _precio_venta = precio_venta;
             _cantidad_disponible = cantidad_disponible;
+            _imagen_producto = imagen_producto;
         }
 
     }

@@ -21,6 +21,7 @@ namespace SIGC.Model
         private string _fecha_contratacion;
         private decimal _sueldo_bruto;
         private string _nota;
+        private byte[] _foto_empleado;
 
         public int Id_empleado
         {
@@ -99,8 +100,13 @@ namespace SIGC.Model
             get { return _nota; }
             set { _nota = value; }
         }
+        public byte[] Foto_empleado
+        {
+            get { return _foto_empleado; }
+            set { _foto_empleado = value; }
+        }
 
-        public Empleado(int id_empleado, int id_departamento, int id_puesto, string cedula, string nombre, string apellido, string sexo, string telefono, string direccion, string fecha_nacimiento, string fecha_contratacion, decimal sueldo_bruto, string nota)
+        public Empleado(int id_empleado, int id_departamento, int id_puesto, string cedula, string nombre, string apellido, string sexo, string telefono, string direccion, string fecha_nacimiento, string fecha_contratacion, decimal sueldo_bruto, string nota, byte[] foto_empleado)
         {
             _id_empleado = id_empleado;
             _id_departamento = id_departamento;
@@ -115,6 +121,7 @@ namespace SIGC.Model
             _fecha_contratacion = fecha_contratacion;
             _sueldo_bruto = sueldo_bruto;
             _nota = nota;
+            _foto_empleado = foto_empleado;
         }
 
     }
