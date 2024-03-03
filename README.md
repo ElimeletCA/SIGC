@@ -4,12 +4,11 @@
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
-| Cliente                 |✅    |
 | Caja                    |         |
 | Cajero                  |         |
 | Categoria               |✅         |
 | Cita                    |         |
-| Cliente                 |         |
+| Cliente                 |✅          |
 | Consulta                |         |
 | Consultorio             |✅         |
 | Departamento            |✅         |
