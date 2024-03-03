@@ -27,14 +27,11 @@
 | Medicamento             |✅         |
 | Medico                  |         |
 | Modulo                  |✅         |
-| Modulo_Permiso          |         |
 | Nomina                  | ✅        |
 | Orden_Compra            |         |
 | Paciente                |✅         |
 | Permiso                 |✅         |
-| Permiso_Rol             |         |
 | Producto                |✅         |
-| Producto_Proveedor      |         |
 | Proveedor               | ✅        |
 | Puesto                  |✅       |
 | Rango_Comprobante       |         |
