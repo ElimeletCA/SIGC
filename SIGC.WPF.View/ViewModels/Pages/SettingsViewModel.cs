@@ -45,21 +45,20 @@ namespace SIGC.WPF.View.ViewModels.Pages
         {
             switch (parameter)
             {
-                case "theme_light":
-                    if (CurrentTheme == ApplicationTheme.Light)
-                        break;
-
-                    ApplicationThemeManager.Apply(ApplicationTheme.Light);
-                    CurrentTheme = ApplicationTheme.Light;
-
-                    break;
-
-                default:
+                case "theme_dark":
                     if (CurrentTheme == ApplicationTheme.Dark)
                         break;
 
                     ApplicationThemeManager.Apply(ApplicationTheme.Dark);
                     CurrentTheme = ApplicationTheme.Dark;
+                    break;
+
+                default:
+                    if (CurrentTheme == ApplicationTheme.Light)
+                        break;
+
+                    ApplicationThemeManager.Apply(ApplicationTheme.Light);
+                    CurrentTheme = ApplicationTheme.Light;
 
                     break;
             }

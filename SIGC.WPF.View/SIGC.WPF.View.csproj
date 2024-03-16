@@ -24,6 +24,8 @@
   <ItemGroup>
     <None Remove="Assets\perfil1.png" />
     <None Remove="Assets\perfil2.jpg" />
+    <None Remove="Assets\sample1.jpg" />
+    <None Remove="Assets\sample2.jpg" />
     <None Remove="Assets\wpfui-icon-256.png" />
     <None Remove="Assets\wpfui-icon-1024.png" />
   </ItemGroup>
@@ -35,6 +37,8 @@
   <ItemGroup>
     <Resource Include="Assets\perfil1.png" />
     <Resource Include="Assets\perfil2.jpg" />
+    <Resource Include="Assets\sample1.jpg" />
+    <Resource Include="Assets\sample2.jpg" />
     <Resource Include="Assets\wpfui-icon-256.png" />
     <Resource Include="Assets\wpfui-icon-1024.png" />
   </ItemGroup>

@@ -30,6 +30,7 @@ namespace SIGC.WPF.View.Views.Windows
             SetPageService(pageService);
 
             navigationService.SetNavigationControl(RootNavigation);
+            ApplicationThemeManager.Apply(ApplicationTheme.Light);
         }
 
         #region INavigationWindow methods
