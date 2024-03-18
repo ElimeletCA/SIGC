@@ -49,12 +49,11 @@
 
 | Tabla                   | Estado ⌛ ⛔ ✅ |
 |-------------------------|-----------|
-| Cliente                 |  ⌛    |
 | Caja                    |         |
 | Cajero                  |         |
 | Categoria               |         |
 | Cita                    |         |
-| Cliente                 |         |
+| Cliente                 |  ✅        |
 | Consulta                |         |
 | Consultorio             |         |
 | Departamento            |         |
@@ -82,7 +81,7 @@
 | Producto                |         |
 | Producto_Proveedor      |         |
 | Proveedor               |         |
-| Puesto                  |         |
+| Puesto                  | ✅         |
 | Rango_Comprobante       |         |
 | Receta                  |         |
 | Rol                     |         |
