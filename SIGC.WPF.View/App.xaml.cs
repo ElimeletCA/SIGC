@@ -13,10 +13,19 @@ using SIGC.WPF.View.ViewModels.Windows;
 using SIGC.WPF.View.Views.Pages;
 using SIGC.WPF.View.Views.Pages.Cliente;
 using SIGC.WPF.View.Views.Windows;
+
 using System.IO;
 using System.Reflection;
 using System.Windows.Threading;
+using SIGC.WPF.View.ViewModels.Pages.Extra;
+using SIGC.WPF.View.Views.Pages.Extra;
+using SIGC.WPF.View.Views.Pages.Administracion;
+
+
 using Wpf.Ui;
+using ExtraPage = SIGC.WPF.View.Views.Pages.Extra.ExtraPage;
+using SIGC.WPF.View.ViewModels.Pages.Administracion;
+using SIGC.WPF.View.ViewModels.Pages.Pacientes;
 
 namespace SIGC.WPF.View
 {
@@ -57,6 +66,15 @@ namespace SIGC.WPF.View
                 services.AddSingleton<DashboardViewModel>();
                 services.AddSingleton<ListaClientePage>();
                 services.AddSingleton<ListaClienteViewModel>();
+                services.AddSingleton<ExtraPage>();
+                services.AddSingleton<ExtraViewModel>();
+                services.AddSingleton<ModuloViewModel>();
+                services.AddSingleton<ModuloPage>();
+                services.AddSingleton<PermisoViewModel>();
+                services.AddSingleton<PermisoPage>();
+                services.AddSingleton<RolViewModel>();
+                services.AddSingleton<RolPage>();
+                services.AddSingleton<SeguroViewModel>();
                 services.AddSingleton<DataPage>();
                 services.AddSingleton<DataViewModel>();
                 services.AddSingleton<SettingsPage>();

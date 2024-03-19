@@ -1,4 +1,5 @@
-﻿using SIGC.WPF.View.ViewModels.Pages.Extra;
+﻿using SIGC.WPF.View.ViewModels.Pages.Administracion;
+using SIGC.WPF.View.ViewModels.Pages.Extra;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,19 +14,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SIGC.WPF.View.ViewModels.Pages.Extra;
 using Wpf.Ui.Controls;
 
-namespace SIGC.WPF.View.Views.Pages.Extra
+namespace SIGC.WPF.View.Views.Pages.Administracion
 {
     /// <summary>
-    /// Interaction logic for ExtraPage.xaml
+    /// Interaction logic for ModuloPage.xaml
     /// </summary>
-    public partial class ExtraPage : INavigableView<ExtraViewModel>
+    public partial class ModuloPage : INavigableView<ModuloViewModel>
     {
-        public ExtraViewModel ViewModel { get; }
+        public ModuloViewModel ViewModel { get; }
 
-        public ExtraPage(ExtraViewModel viewModel)
+        public ModuloPage(ModuloViewModel viewModel)
         {
             ViewModel = viewModel;
             DataContext = this;

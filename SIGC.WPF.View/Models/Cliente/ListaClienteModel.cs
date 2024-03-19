@@ -16,6 +16,8 @@ namespace SIGC.WPF.View.Models.Cliente
     {
         public static DataTable GetClienteDataTable()
         {
+            DataTable emptyDataTable = new DataTable();
+
             try
             {
                 DataSet DataSetCliente = FCliente.GetAll();
@@ -23,17 +25,13 @@ namespace SIGC.WPF.View.Models.Cliente
                 {
                     return DataSetCliente.Tables[0];
                 }
-                else
-                {
-                    return null;
-                }
             }
             catch (Exception ex)
             {
                 System.Windows.MessageBox.Show(ex.Message);
-                return null;
-
             }
+            return emptyDataTable;
+
         }
         public static void InsertarActualizarCliente(SIGC.Model.Cliente cliente)
         {

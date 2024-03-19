@@ -1,0 +1,181 @@
+﻿<Page x:Class="SIGC.WPF.View.Views.Pages.Administracion.ModuloPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      xmlns:administracion="clr-namespace:SIGC.WPF.View.Views.Pages.Administracion"
+      Title="ExtraPage"
+      Height="Auto"
+      d:DataContext="{d:DesignInstance administracion:ModuloPage,
+                                     IsDesignTimeCreatable=False}"
+      d:DesignWidth="800"
+      mc:Ignorable="d">
+    <!--  Grid Principal  -->
+    <Grid Margin="10,20,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <!--  Grid Controles  -->
+        <Grid Grid.Row="0"
+              Margin="10,20,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!--  Etiquetas  -->
+            <ui:TextBlock Grid.Row="0"
+                          Grid.Column="0"
+                          Margin="20,10,20,10"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          FontSize="16"
+                          FontWeight="Bold"
+                          Text="Nombre del modulo:" />
+            <ui:TextBlock Grid.Row="1"
+                          Grid.Column="0"
+                          Margin="20,15,20,10"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          FontSize="16"
+                          FontWeight="Bold"
+                          Text="Descripción del modulo:" />
+            <!--  Campos de texto  -->
+            <ui:TextBox x:Name="txtNombreModulo"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Width="300"
+                        MinWidth="300"
+                        Margin="0,5,0,5"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        HorizontalContentAlignment="Left"
+                        BorderThickness="5,5,5,5"
+                        IsEnabled="{Binding ViewModel.EstadoControlesModulo[5], Mode=OneWay}"
+                        MaxLength="50"
+                        Text="{Binding ViewModel.Moduloseleccionado.Nombre, Mode=TwoWay}" />
+
+            <ui:TextBox x:Name="txtDescripcionModulo"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Width="300"
+                        MinWidth="300"
+                        Margin="0,5,0,5"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        HorizontalContentAlignment="Left"
+                        BorderThickness="5,5,5,5"
+                        IsEnabled="{Binding ViewModel.EstadoControlesModulo[6], Mode=OneWay}"
+                        MaxLength="300"
+                        Text="{Binding ViewModel.Moduloseleccionado.Descripcion, Mode=TwoWay}"
+                        TextWrapping="Wrap" />
+            <!--  Botones  -->
+            <ui:Button x:Name="btnAgregarModulo"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       Margin="10,10,0,10"
+                       Command="{Binding ViewModel.btnAgregarModuloCommand}"
+                       Content="Agregar"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Icon="{ui:SymbolIcon AddCircle12}"
+                       IsEnabled="{Binding ViewModel.EstadoControlesModulo[0], Mode=OneWay}" />
+            <ui:Button x:Name="btnEditarModulo"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Margin="10,10,0,10"
+                       Command="{Binding ViewModel.btnEditarModuloCommand}"
+                       Content="Editar"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Icon="{ui:SymbolIcon Edit48}"
+                       IsEnabled="{Binding ViewModel.EstadoControlesModulo[1], Mode=OneWay}" />
+
+            <ui:Button x:Name="btnCancelarModulo"
+                       Grid.Row="0"
+                       Grid.Column="3"
+                       Margin="10,10,0,10"
+                       Command="{Binding ViewModel.btnCancelarModuloCommand}"
+                       Content="Cancelar"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Icon="{ui:SymbolIcon ArrowUndo48}"
+                       IsEnabled="{Binding ViewModel.EstadoControlesModulo[2], Mode=OneWay}" />
+
+            <ui:Button x:Name="btnGuardarModulo"
+                       Grid.Row="1"
+                       Grid.Column="3"
+                       Margin="10,10,0,10"
+                       Command="{Binding ViewModel.btnGuardarModuloCommand}"
+                       Content="Guardar"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Icon="{ui:SymbolIcon Save28}"
+                       IsEnabled="{Binding ViewModel.EstadoControlesModulo[3], Mode=OneWay}" />
+
+            <ui:Button x:Name="btnEliminarModulo"
+                       Grid.Row="0"
+                       Grid.Column="4"
+                       Margin="10,10,0,10"
+                       Command="{Binding ViewModel.btnEliminarModuloCommand}"
+                       Content="Eliminar"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Icon="{ui:SymbolIcon Delete12}"
+                       IsEnabled="{Binding ViewModel.EstadoControlesModulo[4], Mode=OneWay}" />
+        </Grid>
+        <!--  Grid DataView  -->
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              Margin="10,20,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ui:TextBlock Grid.Row="0"
+                          Grid.Column="0"
+                          Margin="0,10,0,10"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Top"
+                          FontSize="18"
+                          FontWeight="Bold"
+                          Text="Lista de registros" />
+            <ScrollViewer Grid.Row="1"
+                          Grid.Column="0"
+                          Width="1000"
+                          HorizontalScrollBarVisibility="Auto"
+                          VerticalScrollBarVisibility="Auto">
+                <ui:DataGrid Name="DataGridViewModulo"
+                             Width="Auto"
+                             Margin="10,20,10,10"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Top"
+                             BorderBrush="Black"
+                             BorderThickness="2"
+                             IsEnabled="{Binding ViewModel.EstadoControlesModulo[7], Mode=OneWay}"
+                             IsManipulationEnabled="False"
+                             IsReadOnly="True"
+                             ItemsSource="{Binding ViewModel.DataViewModulo, Mode=OneWay}"
+                             SelectedIndex="0"
+                             SelectedItem="{Binding ViewModel.SelectedRowModulo, Mode=OneWayToSource}" />
+
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Page>

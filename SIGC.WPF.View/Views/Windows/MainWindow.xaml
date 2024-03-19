@@ -48,15 +48,15 @@
             IsPaneToggleVisible="True"
             MenuItemsSource="{Binding ViewModel.MenuItems, Mode=OneWay}"
             OpenPaneLength="310"
+            PaneClosed="RootNavigation_PaneClosed"
             PaneDisplayMode="Left"
-            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}"
-                           PaneOpened="RootNavigation_PaneOpened"
-                           PaneClosed="RootNavigation_PaneClosed">
+            PaneOpened="RootNavigation_PaneOpened"
+            TitleBar="{Binding ElementName=TitleBar, Mode=OneWay}">
             <ui:NavigationView.Header>
                 <ui:BreadcrumbBar x:Name="BreadcrumbBar" Margin="42,32,42,20" />
 
             </ui:NavigationView.Header>
-            
+
             <ui:NavigationView.AutoSuggestBox>
                 <ui:AutoSuggestBox x:Name="AutoSuggestBox" PlaceholderText="Buscar">
                     <ui:AutoSuggestBox.Icon>

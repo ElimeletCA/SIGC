@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Windows.Media.Imaging;
 using Wpf.Ui.Controls;
 using Microsoft.Data.SqlClient;
+using SIGC.WPF.View.Views.Pages.Extra;
 
 namespace SIGC.WPF.View.ViewModels.Windows
 {
@@ -89,13 +90,13 @@ namespace SIGC.WPF.View.ViewModels.Windows
             {
                 Content = "Administración",
                 Icon = new SymbolIcon { Symbol = SymbolRegular.WrenchScrewdriver24, Filled = true},
-                MenuItems = new object[]
+                MenuItems = new object[] 
                 {
-                    new NavigationViewItem("Roles", SymbolRegular.PeopleSettings28, typeof(Views.Pages.DataPage)),
-                    new NavigationViewItem("Permisos", SymbolRegular.Key32, typeof(Views.Pages.DataPage)),
+                    new NavigationViewItem("Roles", SymbolRegular.PeopleSettings28, typeof(Views.Pages.Administracion.RolPage)),
+                    new NavigationViewItem("Permisos", SymbolRegular.Key32, typeof(Views.Pages.Administracion.PermisoPage)),
                     new NavigationViewItem("Configuración", SymbolRegular.Settings48, typeof(Views.Pages.DataPage)),
-                    new NavigationViewItem("Módulos", SymbolRegular.ContentSettings32, typeof(Views.Pages.DataPage)),
-                    new NavigationViewItem("Extras", SymbolRegular.DockRow20, typeof(Views.Pages.DataPage)),
+                    new NavigationViewItem("Módulos", SymbolRegular.ContentSettings32, typeof(Views.Pages.Administracion.ModuloPage)),
+                    new NavigationViewItem("Extras", SymbolRegular.DockRow20, typeof(Views.Pages.Extra.ExtraPage)),
 
                     new NavigationViewItem("Usuarios", SymbolRegular.PeopleStar48, typeof(Views.Pages.DataPage))
 
