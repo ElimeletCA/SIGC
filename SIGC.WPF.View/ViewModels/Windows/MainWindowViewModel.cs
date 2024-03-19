@@ -82,7 +82,7 @@ namespace SIGC.WPF.View.ViewModels.Windows
                 MenuItems = new object[]
                 {
                     new NavigationViewItem("Médicos", SymbolRegular.Doctor48, typeof(Views.Pages.DataPage)),
-                    new NavigationViewItem("Empleados", SymbolRegular.PeopleToolbox20, typeof(Views.Pages.DataPage)),
+                    new NavigationViewItem("Empleados", SymbolRegular.PeopleToolbox20, typeof(Views.Pages.RecursosHumanos.EmpleadoPage)),
                     new NavigationViewItem("Cajeros", SymbolRegular.PeopleMoney24, typeof(Views.Pages.DataPage))
                 }
             },

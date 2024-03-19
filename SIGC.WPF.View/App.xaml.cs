@@ -20,11 +20,15 @@ using System.Windows.Threading;
 using SIGC.WPF.View.ViewModels.Pages.Extra;
 using SIGC.WPF.View.Views.Pages.Extra;
 using SIGC.WPF.View.Views.Pages.Administracion;
+using SIGC.WPF.View.Views.Pages.RecursosHumanos;
+
 
 
 using Wpf.Ui;
 using ExtraPage = SIGC.WPF.View.Views.Pages.Extra.ExtraPage;
 using SIGC.WPF.View.ViewModels.Pages.Administracion;
+using SIGC.WPF.View.ViewModels.Pages.RecursosHumanos;
+
 using SIGC.WPF.View.ViewModels.Pages.Pacientes;
 
 namespace SIGC.WPF.View
@@ -72,6 +76,8 @@ namespace SIGC.WPF.View
                 services.AddSingleton<ModuloPage>();
                 services.AddSingleton<PermisoViewModel>();
                 services.AddSingleton<PermisoPage>();
+                services.AddSingleton<EmpleadoViewModel>();
+                services.AddSingleton<EmpleadoPage>();
                 services.AddSingleton<RolViewModel>();
                 services.AddSingleton<RolPage>();
                 services.AddSingleton<SeguroViewModel>();

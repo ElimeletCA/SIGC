@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace SIGC.Model
 {
-    public class Empleado
+    public class Empleado : INotifyPropertyChanged
     {
         private int _id_empleado;
         private int _id_departamento;
@@ -26,86 +22,187 @@ namespace SIGC.Model
         public int Id_empleado
         {
             get { return _id_empleado; }
-            set { _id_empleado = value; }
+            set
+            {
+                if (_id_empleado != value)
+                {
+                    _id_empleado = value;
+                    OnPropertyChanged("Id_empleado");
+                }
+            }
         }
 
         public int Id_departamento
         {
             get { return _id_departamento; }
-            set { _id_departamento = value; }
+            set
+            {
+                if (_id_departamento != value)
+                {
+                    _id_departamento = value;
+                    OnPropertyChanged("Id_departamento");
+                }
+            }
         }
 
         public int Id_puesto
         {
             get { return _id_puesto; }
-            set { _id_puesto = value; }
+            set
+            {
+                if (_id_puesto != value)
+                {
+                    _id_puesto = value;
+                    OnPropertyChanged("Id_puesto");
+                }
+            }
         }
 
         public string Cedula
         {
             get { return _cedula; }
-            set { _cedula = value; }
+            set
+            {
+                if (_cedula != value)
+                {
+                    _cedula = value;
+                    OnPropertyChanged("Cedula");
+                }
+            }
         }
 
         public string Nombre
         {
             get { return _nombre; }
-            set { _nombre = value; }
+            set
+            {
+                if (_nombre != value)
+                {
+                    _nombre = value;
+                    OnPropertyChanged("Nombre");
+                }
+            }
         }
 
         public string Apellido
         {
             get { return _apellido; }
-            set { _apellido = value; }
+            set
+            {
+                if (_apellido != value)
+                {
+                    _apellido = value;
+                    OnPropertyChanged("Apellido");
+                }
+            }
         }
 
         public string Sexo
         {
             get { return _sexo; }
-            set { _sexo = value; }
+            set
+            {
+                if (_sexo != value)
+                {
+                    _sexo = value;
+                    OnPropertyChanged("Sexo");
+                }
+            }
         }
 
         public string Telefono
         {
             get { return _telefono; }
-            set { _telefono = value; }
+            set
+            {
+                if (_telefono != value)
+                {
+                    _telefono = value;
+                    OnPropertyChanged("Telefono");
+                }
+            }
         }
 
         public string Direccion
         {
             get { return _direccion; }
-            set { _direccion = value; }
+            set
+            {
+                if (_direccion != value)
+                {
+                    _direccion = value;
+                    OnPropertyChanged("Direccion");
+                }
+            }
         }
 
         public string Fecha_nacimiento
         {
             get { return _fecha_nacimiento; }
-            set { _fecha_nacimiento = value; }
+            set
+            {
+                if (_fecha_nacimiento != value)
+                {
+                    _fecha_nacimiento = value;
+                    OnPropertyChanged("Fecha_nacimiento");
+                }
+            }
         }
 
         public string Fecha_Contratacion
         {
             get { return _fecha_contratacion; }
-            set { _fecha_contratacion = value; }
+            set
+            {
+                if (_fecha_contratacion != value)
+                {
+                    _fecha_contratacion = value;
+                    OnPropertyChanged("Fecha_Contratacion");
+                }
+            }
         }
 
         public decimal Sueldo_bruto
         {
             get { return _sueldo_bruto; }
-            set { _sueldo_bruto = value; }
+            set
+            {
+                if (_sueldo_bruto != value)
+                {
+                    _sueldo_bruto = value;
+                    OnPropertyChanged("Sueldo_bruto");
+                }
+            }
         }
 
         public string Nota
         {
             get { return _nota; }
-            set { _nota = value; }
+            set
+            {
+                if (_nota != value)
+                {
+                    _nota = value;
+                    OnPropertyChanged("Nota");
+                }
+            }
         }
         public byte[] Foto_empleado
         {
             get { return _foto_empleado; }
-            set { _foto_empleado = value; }
+            set
+            {
+                if (_foto_empleado != value)
+                {
+                    _foto_empleado = value;
+                    OnPropertyChanged("Foto_empleado");
+                }
+            }
         }
+        public Empleado()
+        {
 
+        }
         public Empleado(int id_empleado, int id_departamento, int id_puesto, string cedula, string nombre, string apellido, string sexo, string telefono, string direccion, string fecha_nacimiento, string fecha_contratacion, decimal sueldo_bruto, string nota, byte[] foto_empleado)
         {
             _id_empleado = id_empleado;
@@ -122,6 +219,11 @@ namespace SIGC.Model
             _sueldo_bruto = sueldo_bruto;
             _nota = nota;
             _foto_empleado = foto_empleado;
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
     }
